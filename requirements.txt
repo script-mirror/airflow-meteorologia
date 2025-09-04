@@ -1,0 +1,7 @@
+# Adicione aqui as dependências Python necessárias para o seu projeto Airflow
+# Exemplo:
+pandas
+requests
+pdf2image
+docker
+git+https://github.com/wx-middle/libs-middle.git
