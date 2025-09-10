@@ -41,7 +41,9 @@ modelos_schedule = {
     'ecmwf-aifs-ens': '0 5,16 * * *',
     'ecmwf-aifs-ens-membros': '0 5,16 * * *',
     'ecmwf-ens-estendido': '5 17 * * *',
-    'ecmwf-ens-estendido-membros': '5 17 * * *'
+    'ecmwf-ens-estendido-membros': '5 17 * * *',
+    'eta': '30 6 * * *',
+    'merge': '30 13 * * *',
 }
 
 for modelo, schedule in modelos_schedule.items():
