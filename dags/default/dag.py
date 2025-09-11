@@ -31,8 +31,10 @@ def create_model_dag(model_name, schedule):
 modelos_schedule = {
     'gfs': '0 2,8,14,20 * * *',
     'gefs': '0 3,8,15,20 * * *',
+    'gefs-wind': '0 3,8,15,20 * * *',
     'gefs-membros': '0 3,8,15,20 * * *',
     'gefs-estendido': '50 23 * * *',
+    'gefs-estendido-wind': '50 23 * * *',
     'gefs-estendido-membros': '2 0 * * *',
     'ecmwf': '0 4,17 * * *',
     'ecmwf-ens': '0 6,18 * * *',
