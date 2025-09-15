@@ -44,8 +44,8 @@ modelos_schedule = {
     'ecmwf-aifs-ens-membros': '0 5,16 * * *',
     'ecmwf-ens-estendido': '5 17 * * *',
     'ecmwf-ens-estendido-membros': '5 17 * * *',
-    'cfsv2': '10 6,12,18,0 * * *',
-    'cfsv2-mensal': '10 6,12,18,0 * * *',
+    'cfsv2': '10 6,12,18,23 * * *',
+    'cfsv2-mensal': '10 6,12,18,23 * * *',
     'eta': '30 6 * * *',
     'merge': '30 13 * * *',
 }
