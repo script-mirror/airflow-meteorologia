@@ -47,7 +47,7 @@ modelos_schedule = {
     'cfsv2': '10 6,12,18,23 * * *',
     'cfsv2-mensal': '10 6,12,18,23 * * *',
     'eta': '30 6 * * *',
-    'pconjunto-ons': '30 6 * * *',
+    'pconjunto-ons': '30 7 * * *',
     'merge': '30 13 * * *',
 }
 
