@@ -35,7 +35,7 @@ modelos_schedule = {
     'gefs-membros': '0 3,8,15,20 * * *',
     'gefs-estendido': '50 23 * * *',
     'gefs-estendido-wind': '50 23 * * *',
-    'gefs-estendido-membros': '2 0 * * *',
+    'gefs-membros-estendido': '2 0 * * *',
     'ecmwf': '30 5,17 * * *',
     'ecmwf-ens': '0 6,18 * * *',
     'ecmwf-ens-membros': '0 6,18 * * *',
