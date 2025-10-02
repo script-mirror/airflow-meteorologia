@@ -35,7 +35,7 @@ modelos_schedule = {
     'gefs-membros': '0 3,8,15,20 * * *',
     'gefs-estendido': '50 23 * * *',
     'gefs-estendido-wind': '50 23 * * *',
-    'gefs-membros-estendido': '2 0 * * *',
+    'gefs-membros-estendido': '50 23 * * *',
     'ecmwf': '30 5,17 * * *',
     'ecmwf-ens': '0 6,18 * * *',
     'ecmwf-ens-membros': '0 6,18 * * *',
@@ -45,10 +45,11 @@ modelos_schedule = {
     'ecmwf-ens-estendido': '5 17 * * *',
     'ecmwf-ens-estendido-membros': '5 17 * * *',
     'cfsv2': '10 6,12,18,23 * * *',
-    'cfsv2-mensal': '10 6,12,18,23 * * *',
+    'cfsv2-mensal': '10 8,14,20,23 * * *',
     'eta': '30 6 * * *',
     'pconjunto-ons': '30 7 * * *',
     'merge': '30 13 * * *',
+    'cmc-ens': '30 8,18 * * *',
 }
 
 for modelo, schedule in modelos_schedule.items():
