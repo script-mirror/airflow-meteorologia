@@ -29,7 +29,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
-    - ~/.env:/home/airflow/.env
+    - /home/admin/.env:/home/airflow/.env
     - /var/run/docker.sock:/var/run/docker.sock
   user: "${AIRFLOW_UID:-1000}:0"
   depends_on:
