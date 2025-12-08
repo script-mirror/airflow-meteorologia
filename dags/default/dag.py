@@ -19,13 +19,15 @@ def create_model_dag(model_name, schedule):
     def model_dag():
 
         cmd = f'/projetos/produtos-meteorologia/produtos.sh {model_name} "" "" "" "" ""'
-        # cmd = f"ls /projetos/produtos-meteorologia/"
 
-        BashOperator(
+        SSHOperator(
             task_id=f"run_{model_name}_script",
-            bash_command=f"{SSH} '{cmd}'",
-            # bash_command=f"'{cmd}'",
+            # bash_command=cmd,
+            command=cmd,
+            ssh_conn_id='ssh_master',
             execution_timeout=datetime.timedelta(hours=30),
+            conn_timeout=None,
+            cmd_timeout=None,
         )
 
     return model_dag()
