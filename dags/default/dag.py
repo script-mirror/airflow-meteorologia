@@ -4,8 +4,9 @@ from airflow.providers.ssh.operators.ssh import SSHOperator
 import datetime
 
 TIME_OUT = 60*60*30
-SSH = "ssh -i /opt/airflow/config/chave-middle.pem -o StrictHostKeyChecking=no admin@tradingenergiarz.com"
- 
+#SSH = "ssh -i /opt/airflow/config/chave-middle.pem -o StrictHostKeyChecking=no admin@tradingenergiarz.com"
+SSH = '' 
+
 def create_model_dag(model_name, schedule):
 
     @dag(
@@ -23,6 +24,7 @@ def create_model_dag(model_name, schedule):
         BashOperator(
             task_id=f"run_{model_name}_script",
             bash_command=f"{SSH} '{cmd}'",
+            # bash_command=f"'{cmd}'",
             execution_timeout=datetime.timedelta(hours=30),
         )
 
